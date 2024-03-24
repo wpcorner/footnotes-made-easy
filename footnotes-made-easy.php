@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Footnotes Made Easy
-Plugin URI: https://github.com/dartiss/footnotes-made-easy
+Plugin URI: https://github.com/wpcorner/footnotes-made-easy/
 Description: Allows post authors to easily add and manage footnotes in posts.
 Version: 3.0.1
-Author: David Artiss
-Author URI: https://artiss.blog
+Author: Patrick Lumumba
+Author URI: https://wpcorner.co/author/patrick-l/
 Text Domain: footnotes-made-easy
 */
 
