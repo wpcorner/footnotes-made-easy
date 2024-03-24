@@ -353,9 +353,12 @@ class swas_wp_footnotes {
 
 		if ( false !== strpos( $file, 'footnotes-made-easy.php' ) ) {
 
-			$links = array_merge( $links, array( '<a href="https://github.com/dartiss/footnotes-made-easy">' . __( 'Github', 'footnotes-made-easy' ) . '</a>' ) );
+			$links = array_merge( $links, array( '<a href="https://github.com/wpcorner/footnotes-made-easy/">' . __( 'Github', 'footnotes-made-easy' ) . '</a>' ) );
 
 			$links = array_merge( $links, array( '<a href="https://wordpress.org/support/plugin/footnotes-made-easy">' . __( 'Support', 'footnotes-made-easy' ) . '</a>' ) );
+
+			$links = array_merge( $links, array( '<a href="https://wpcorner.co/support/footnotes-made-easy/">' . __( 'Documentation', 'footnotes-made-easy' ) . '</a>' ) );
+			
 		}
 
 		return $links;
