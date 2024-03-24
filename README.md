@@ -13,6 +13,8 @@ Footnotes Made Easy is a simple, but powerful, method of adding footnotes into y
 
 And much, much more!
 
+> Footnotes Made Easy is a fork of [WP Footnotes](https://github.com/drzax/wp-footnotes), a plugin by **Simon Elvery** which was abandoned some years ago.
+
 ## Installation & Usage
 
 Installation is best handled from within the WordPress admin area, but you can [download the latest release from the WordPress Plugin Directory](https://wordpress.org/plugins/footnotes-made-easy/).
