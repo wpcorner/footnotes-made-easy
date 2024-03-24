@@ -25,13 +25,6 @@ Footnotes Made Easy is a simple, but powerful, method of adding footnotes into y
 * Lots of configuration options
 * And much, much more!
 
-**Technical specification...**
-
-* Licensed under [GPLv2 (or later)](http://wordpress.org/about/gpl/ "GNU General Public License")
-* Designed for both single and multi-site installations
-* PHP 7 compatible
-* Fully internationalized, ready for translations. **If you would like to add a translation to this plugin then please head to our [Translating WordPress](https://translate.wordpress.org/projects/wp-plugins/footnotes-made-easy "Translating WordPress") page**
-
 **Footnotes Made Easy is a fork of [WP Footnotes](https://github.com/drzax/wp-footnotes "Github - wp-footnotes"), a plugin by Simon Elvery which was abandoned some years ago.**
 
 **Please visit the [Github page](https://github.com/wpcorner/footnotes-made-easy/ "Github") for the latest code development, planned enhancements and known issues**
@@ -61,6 +54,26 @@ The only way to get around this is to know how many posts are on each page and t
 Sometimes it's useful to be able to refer to a previous footnote a second (or third, or fourth...) time. To do this, you can either simply insert the exact same text as you did the first time and the identifier should simply reference the previous note. Alternatively, if you don't want to do all that typing again, you can construct a footnote like this: `((ref:1))` and the identifier will reference the footnote with the given number.
 
 Even though it's a little more typing, using the exact text method is much more robust. The number referencing will not work across multiple pages in a paged post (but will work within the page). Also, if you use the number referencing system you risk them identifying the incorrect footnote if you go back and insert a new footnote and forget to change the referenced number.
+
+== Available in 8 Languages ==
+
+Footnotes Made Easy is fully internationalized, and ready for translations.
+
+**Thanks to the following contributors:**
+
+* [David Artiss](https://profiles.wordpress.org/dartiss/), English (UK)
+* [Mark Robson](https://profiles.wordpress.org/markscottrobson/), English (UK)
+* [Annabelle W](https://profiles.wordpress.org/yayannabelle/), English (UK)
+* [maboroshin](https://profiles.wordpress.org/maboroshin/), Japanese
+* [Laurent MILLET](https://profiles.wordpress.org/wplmillet/), French (France)
+* [B. Cansmile Cha](https://profiles.wordpress.org/cansmile/), Korean 
+* [danbilabs](https://profiles.wordpress.org/danbilabs/), Korean
+* [denelan](https://profiles.wordpress.org/danbilabs/), Dutch 
+* [Peter Smits](https://profiles.wordpress.org/psmits1567/), Dutch
+* [Pieterjan Deneys](https://profiles.wordpress.org/nekojonez/), Dutch (Belgium)
+* [Alex Grey](https://profiles.wordpress.org/alexvgrey/), Russian
+
+**If you would like to add a translation to this plugin then please head to our [Translating WordPress](https://translate.wordpress.org/projects/wp-plugins/footnotes-made-easy "Translating WordPress") page**
 
 == Installation ==
 
