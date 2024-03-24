@@ -6,4 +6,5 @@
 4. Push your topic branch to GitHub
 5. Submit pull request.
 
-By submitting a pull request you're agreeing to license your contributions under the GPL.
+By submitting a pull request you're agreeing to license your contributions under the [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html
+).
