@@ -59,7 +59,7 @@ Even though it's a little more typing, using the exact text method is much more 
 
 Footnotes Made Easy is fully internationalized, and ready for translations.
 
-**Much thanks to the following translators for their contribution:**
+**Much thanks to the following translators for their contributions:**
 
 * [David Artiss](https://profiles.wordpress.org/dartiss/), English (UK)
 * [Mark Robson](https://profiles.wordpress.org/markscottrobson/), English (UK)
