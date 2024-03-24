@@ -143,5 +143,5 @@ I use semantic versioning, with the first release being 1.0.
 
 == Upgrade Notice ==
 
-= 3.0.1 =
-* Removal of adoption code
+= 3.0.2 =
+* Maintenance: Updated this README to include the new contributor, more FAQs. Also updated the image assets (banner and icon)
