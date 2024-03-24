@@ -100,12 +100,18 @@ Yes, the plugin provides options to disable footnotes on the home page, archives
 
 == Screenshots ==
 
-1. An example showing the footnotes in use
-2. The settings screen with advanced settings shown
+1. The Settings screen with advanced settings shown
+2. Continuation of the settings screen with advanced settings shown
+3. The post editor page showing how to to insert footnotes
+4. Live preview of a post page showing footnotes within the page
+5. Live preview of a post page showing list of footnotes at the bootom of the post
 
 == Change Log ==
 
 I use semantic versioning, with the first release being 1.0.
+
+= 3.0.2 =
+* Maintenance: Updated this README to include the new contributor, more FAQs. Also updated the image assets (banner and icon)
 
 = 3.0.1 =
 * Maintenance: Removed all the adoption notices.
