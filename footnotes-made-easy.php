@@ -18,6 +18,12 @@ Text Domain: footnotes-made-easy
 * @since	1.0
 */
 
+// Exit if accessed directly
+
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; 
+}
+
 // Instantiate the class
 
 $swas_wp_footnotes = new swas_wp_footnotes();
