@@ -1,6 +1,7 @@
 === Footnotes Made Easy ===
 Contributors: lumiblog, dartiss
 Tags: bibliography, footnotes, formatting, reference
+Donate link: https://wpcorner.co/donate
 Requires at least: 4.6
 Tested up to: 6.5
 Requires PHP: 7.4
