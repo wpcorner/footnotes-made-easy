@@ -15,7 +15,7 @@ Allows post authors to easily add and manage footnotes in posts.
 
 Footnotes Made Easy is a simple, but powerful, method of adding footnotes into your posts and pages.
 
-Key features include...
+**Key features include...**
 
 * Simple footnote insertion via double parentheses
 * Combine identical notes
@@ -25,16 +25,14 @@ Key features include...
 * Lots of configuration options
 * And much, much more!
 
-Technical specification...
+**Technical specification...**
 
 * Licensed under [GPLv2 (or later)](http://wordpress.org/about/gpl/ "GNU General Public License")
 * Designed for both single and multi-site installations
-* PHP7 compatible
+* PHP 7 compatible
 * Fully internationalized, ready for translations. **If you would like to add a translation to this plugin then please head to our [Translating WordPress](https://translate.wordpress.org/projects/wp-plugins/footnotes-made-easy "Translating WordPress") page**
 
 **Footnotes Made Easy is a fork of [WP Footnotes](https://github.com/drzax/wp-footnotes "Github - wp-footnotes"), a plugin by Simon Elvery which was abandoned some years ago.**
-
-Iconography is courtesy of the very talented [Janki Rathod](https://www.fiverr.com/jankirathore).
 
 **Please visit the [Github page](https://github.com/wpcorner/footnotes-made-easy/ "Github") for the latest code development, planned enhancements and known issues**
 
@@ -75,13 +73,17 @@ Voila! It's ready to go.
 
 == Frequently Asked Questions ==
 
-= What are the plans for this plugin? =
+= How do I add a footnote to my post or page? = 
 
-Release 1.0 is literally the last version of the plugin code from 4 years ago with new branding added to it and removal of some code that I knew didn't work. The next release will see the code tidied up and some initial minor extras added. At this stage I will be looking to add more major features but nothing too much - I wish to keep the plugin as easy-to-use as possible with simplified features.
+To add a footnote, surround the footnote text with the opening and closing footnote markers specified in the plugin settings. By default, these are `(( and ))`.
 
 = Other than the available options, can the footnotes output be styled? =
 
 Yes it can. The easiest way is to use the CSS editor in your theme customizer. For example, 'ol.footnotes' refers to the footnotes list in general and 'ol.footnotes li' the individual footnotes.
+
+= Can I disable footnotes on specific parts of my website? =
+
+Yes, the plugin provides options to disable footnotes on the home page, archives, search results, feeds, and previews.
 
 == Screenshots ==
 
