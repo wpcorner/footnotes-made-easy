@@ -13,6 +13,21 @@
 
 <h1><?php _e( 'Footnotes Made Easy', 'footnotes-made-easy' ); ?></h1>
 
+<div class="gb-ad">
+            <h3><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 68"><defs/><rect width="100%" height="100%" fill="none"/><g class="currentLayer"><path fill="#313457" d="M34.76 33C22.85 21.1 20.1 13.33 28.23 5.2 36.37-2.95 46.74.01 50.53 3.8c3.8 3.8 5.14 17.94-5.04 28.12-2.95 2.95-5.97 5.84-5.97 5.84L34.76 33"/><path fill="#313457" d="M43.98 42.21c5.54 5.55 14.59 11.06 20.35 5.3 5.76-5.77 3.67-13.1.98-15.79-2.68-2.68-10.87-5.25-18.07 1.96-2.95 2.95-5.96 5.84-5.96 5.84l2.7 2.7m-1.76 1.75c5.55 5.54 11.06 14.59 5.3 20.35-5.77 5.76-13.1 3.67-15.79.98-2.69-2.68-5.25-10.87 1.95-18.07 2.85-2.84 5.84-5.96 5.84-5.96l2.7 2.7"/><path fill="#313457" d="M33 34.75c-11.9-11.9-19.67-14.67-27.8-6.52-8.15 8.14-5.2 18.5-1.4 22.3 3.8 3.79 17.95 5.13 28.13-5.05 3.1-3.11 5.84-5.97 5.84-5.97L33 34.75"/></g></svg> Thank you for using Footnotes Made Easy!</h3>
+            <p>If you enjoy this plugin, do not forget to <a href="https://wordpress.org/support/plugin/footnotes-made-easy/reviews/?filter=5" rel="external">rate it</a>! We work hard to update it, fix bugs, add new features and make it compatible with the latest web technologies.</p>
+            <p></p>
+            <p style="font-size:14px">
+                <b>Featured plugins:</b>&#32;
+                🔥 <a href="https://wordpress.org/plugins/mobilize/" target="_blank" rel="external noopener">Mobilize</a> and&#32;
+                🚀 <a href="https://wordpress.org/plugins/search-engines-blocked-in-header/" target="_blank" rel="external noopener">Search Engines Blocked in Header</a>.&#32;
+			</p>
+			<p></p>
+			<p style="font-size:14px">
+			For WordPress related content, check out <a href="https://wpcorner.co/">WP Corner blog</a>.
+            </p>
+        </div>
+
 <?php
 if ( !empty( $_POST[ 'save_options' ] ) && ( check_admin_referer( 'footnotes-nonce', 'footnotes_nonce' ) ) ) {
 	$message = __( 'Options saved.', 'footnotes-made-easy' );
@@ -130,5 +145,11 @@ if ( !empty( $_POST[ 'save_options' ] ) && ( check_admin_referer( 'footnotes-non
 		<input type="hidden" name="save_footnotes_made_easy_options" value="1" />
 
 	</form>
+
+	<div class="gb-ad">
+            <div class="inside">
+                <p>For support, feature requests and bug reporting, please open an issue on <a href="https://github.com/wpcorner/footnotes-made-easy/issues/" rel="external">GitHub</a>.</p>
+                <p>&copy;<?php echo gmdate( 'Y' ); ?> <a href="https://wpcorner.co/" rel="external"><strong>WP Corner.co</strong></a> &middot; Code wrangling since 2005</p>
+            </div>
 
 </div>
