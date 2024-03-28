@@ -1,0 +1,37 @@
+/**
+ * Ad Box UI
+ */
+ .gb-ad {
+    color: #1d2327;
+    background-color: #ffffff;
+    box-shadow: 0 0 2px 1px rgb(53 72 91 / 14%),
+        0 6px 3px rgb(0 0 0 / 4%),
+        0 12px 6px rgb(0 0 0 / 3%);
+    margin: 16px 0;
+    padding: 24px;
+}
+.gb-ad a {
+    color: #E23F36;
+    text-decoration: underline;
+    text-decoration-color: lightgray;
+    text-decoration-thickness: 2px;
+}
+.gb-ad a:hover {
+    text-decoration-color: #9c2113;
+}
+.gb-ad svg {
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: text-bottom;
+}
+.gb-ad h3 {
+    color: #1d2327;
+    font-size: 1.45em;
+    font-weight: 500;
+}
+.gb-ad b {
+    font-weight: 500;
+}
+.gb-ad p {
+    font-size: 15px;
+}
