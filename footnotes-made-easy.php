@@ -24,6 +24,14 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit; 
 }
 
+/**
+ * Enqueue plugin styles
+ */
+function fme_enqueue_styles() {
+    wp_enqueue_style( 'gbad-styles', plugin_dir_url( __FILE__ ) . 'css/gbad.css', array(), filemtime( plugin_dir_path( __FILE__ ) . 'css/gbad.css' ) );
+}
+add_action( 'admin_enqueue_scripts', 'fme_enqueue_styles' );
+
 // Instantiate the class
 
 $swas_wp_footnotes = new swas_wp_footnotes();
