@@ -5,7 +5,7 @@ Donate link: https://wpcorner.co/donate
 Requires at least: 4.6
 Tested up to: 6.5
 Requires PHP: 7.4
-Stable tag: 3.0.2
+Stable tag: 3.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,7 +13,7 @@ Allows post authors to easily add and manage footnotes in posts.
 
 == Description ==
 
-Footnotes Made Easy is a simple, but powerful, method of adding footnotes into your posts and pages.
+Footnotes Made Easy is a simple, but powerful, method of adding footnotes to your posts and pages.
 
 **Key features include...**
 
@@ -25,9 +25,9 @@ Footnotes Made Easy is a simple, but powerful, method of adding footnotes into y
 * Lots of configuration options
 * And much, much more!
 
-**Footnotes Made Easy is a fork of [WP Footnotes](https://github.com/drzax/wp-footnotes "Github - wp-footnotes"), a plugin by Simon Elvery which was abandoned some years ago.**
+**Footnotes Made Easy is a fork of [WP Footnotes](https://github.com/drzax/wp-footnotes "Github - wp-footnotes"), a plugin by Simon Elvery which was abandoned some years ago**.
 
-**Please visit the [Github page](https://github.com/wpcorner/footnotes-made-easy/ "Github") for the latest code development, planned enhancements and known issues**
+**Please visit the [Github page](https://github.com/wpcorner/footnotes-made-easy/ "Github") for the latest code development, planned enhancements and known issues**.
 
 == Getting Started ==
 
@@ -41,11 +41,11 @@ The footnote will then appear at the bottom of your post/page.
 
 == Options ==
 
-You have a fair few options on how the identifier links, footnotes and back-links look which can be found in the WordPress admin area under Settings -> Footnotes.
+You have a fair few options on how the identifier links, footnotes and back-links look which can be found in the WordPress admin area under 'Settings -> Footnotes'.
 
 == Paginated Posts ==
 
-Some of you seem to like paginating post, which is kind of problematic. By default each page of your post will have it's own set of footnotes at the bottom and the numbering will start again from 1 for each page.
+Some of you seem to like the paginating post, which is kind of problematic. By default, each page of your post will have its own set of footnotes at the bottom and the numbering will start again from 1 for each page.
 
 The only way to get around this is to know how many posts are on each page and tell Footnotes Made Easy what number you want the list to start at for each of the pages. So at some point on each page (that is, between each `<!--nextpage-->` tag) you need to add a tag to let the plugin know what number the footnotes on this page should start at. The tag should look like this `<!--startnum=5-->` where "5" is the number you want the footnotes for this page to start at.
 
@@ -59,7 +59,7 @@ Even though it's a little more typing, using the exact text method is much more 
 
 Footnotes Made Easy is fully internationalized, and ready for translations.
 
-**Much thanks to the following translators for their contributions:**
+**Many thanks to the following translators for their contributions:**
 
 * [David Artiss](https://profiles.wordpress.org/dartiss/), English (UK)
 * [Mark Robson](https://profiles.wordpress.org/markscottrobson/), English (UK)
@@ -92,7 +92,7 @@ To add a footnote, surround the footnote text with the opening and closing footn
 
 = Other than the available options, can the footnotes output be styled? =
 
-Yes it can. The easiest way is to use the CSS editor in your theme customizer. For example, 'ol.footnotes' refers to the footnotes list in general and 'ol.footnotes li' the individual footnotes.
+Yes, it can. The easiest way is to use the CSS editor in your theme customizer. For example, 'ol.footnotes' refers to the footnotes list in general and 'ol.footnotes li' the individual footnotes.
 
 = Can I disable footnotes on specific parts of my website? =
 
@@ -102,16 +102,21 @@ Yes, the plugin provides options to disable footnotes on the home page, archives
 
 1. The Settings screen with advanced settings shown
 2. Continuation of the settings screen with advanced settings shown
-3. The post editor page showing how to to insert footnotes
+3. The post editor page showing how to insert footnotes
 4. Live preview of a post page showing footnotes within the page
-5. Live preview of a post page showing list of footnotes at the bootom of the post
+5. Live preview of a post page showing the list of footnotes at the bottom of the post
 
 == Change Log ==
 
 I use semantic versioning, with the first release being 1.0.
 
+= 3.0.3 =
+* Maintenance: Updated README to grammatically correct the content.
+* Maintenance: PHP 8.2 Compatibility test passed.
+* Maintenance: AD UI Box added to the plugin's settings/options page.
+
 = 3.0.2 =
-* Maintenance: Updated this README to include the new contributor, more FAQs. Also updated the image assets (banner and icon)
+* Maintenance: Updated this README to include the new contributor, and more FAQs. Also updated the image assets (banner and icon)
 
 = 3.0.1 =
 * Maintenance: Removed all the adoption notices.
@@ -143,5 +148,5 @@ I use semantic versioning, with the first release being 1.0.
 
 == Upgrade Notice ==
 
-= 3.0.2 =
-* Maintenance: Updated this README to include the new contributor, more FAQs. Also updated the image assets (banner and icon)
+= 3.0.3 =
+* Maintenance: Updated readme text, added AD UI Box. 
