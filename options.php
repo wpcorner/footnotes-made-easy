@@ -149,7 +149,7 @@ if ( !empty( $_POST[ 'save_options' ] ) && ( check_admin_referer( 'footnotes-non
 	<div class="gb-ad">
             <div class="inside">
                 <p>For support, feature requests and bug reporting, please open an issue on <a href="https://github.com/wpcorner/footnotes-made-easy/issues/" rel="external">GitHub</a>.</p>
-                <p>&copy;<?php echo gmdate( 'Y' ); ?> <a href="https://wpcorner.co/" rel="external"><strong>WP Corner.co</strong></a> &middot; Code wrangling since 2005</p>
+                <p>&copy;<?php echo gmdate( 'Y' ); ?> <a href="https://wpcorner.co/" rel="external"><strong>WP Corner</strong></a> &middot; Code wrangling since 2005</p>
             </div>
 
 </div>
