@@ -8,7 +8,7 @@ To be released.
 
 - [ ] Adding a possibility of turning footnotes off on mobile
 
-Once the two are complete, v.3.0.3 will be released.
+Once complete, v.3.0.4 will be released.
 
 ## v.3.0.3 
 
