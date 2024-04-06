@@ -11,13 +11,13 @@
     padding: 24px;
 }
 .gb-ad a {
-    color: #E23F36;
+    color: #043959;
     text-decoration: underline;
     text-decoration-color: lightgray;
     text-decoration-thickness: 2px;
 }
 .gb-ad a:hover {
-    text-decoration-color: #9c2113;
+    text-decoration-color: #0a4b78;
 }
 .gb-ad svg {
     height: 24px;
