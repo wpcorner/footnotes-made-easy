@@ -1,5 +1,5 @@
 === Footnotes Made Easy ===
-Contributors: lumiblog, dartiss
+Contributors: lumiblog, dartiss, manuell
 Tags: bibliography, footnotes, formatting, reference
 Donate link: https://wpcorner.co/donate
 Requires at least: 4.6
