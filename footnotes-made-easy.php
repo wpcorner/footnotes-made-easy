@@ -157,8 +157,12 @@ class swas_wp_footnotes {
 		}
 
 		// Hook me up
-
-		add_action( 'the_content', array( $this, 'process' ), $this->current_options[ 'priority' ] );
+		
+		// Adding a filter to modify the fields processed by the plugin
+		$fields_to_process = apply_filters('footnotes_made_easy_fields', array('the_content')); 
+		// Hooking the process function to each field
+		foreach ($fields_to_process as $field) {
+			add_action($field, array($this, 'process'), $this->current_options['priority']);
 		add_action( 'admin_menu', array( $this, 'add_options_page' ) ); 		// Insert the Admin panel.
 		add_action( 'wp_head', array( $this, 'insert_styles' ) );
 		if ( $this->current_options[ 'pretty_tooltips' ] ) add_action( 'wp_enqueue_scripts', array( $this, 'tooltip_scripts' ) );
