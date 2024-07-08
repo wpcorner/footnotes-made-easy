@@ -3,9 +3,9 @@ Contributors: lumiblog, dartiss, manuell
 Tags: bibliography, footnotes, formatting, reference
 Donate link: https://wpcorner.co/donate
 Requires at least: 4.6
-Tested up to: 6.5
+Tested up to: 6.6
 Requires PHP: 7.4
-Stable tag: 3.0.3
+Stable tag: 3.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -110,6 +110,9 @@ Yes, the plugin provides options to disable footnotes on the home page, archives
 
 I use semantic versioning, with the first release being 1.0.
 
+= 3.0.4 =
+* Maintenance: WordPress 6.6 compatibilty test passed.
+
 = 3.0.3 =
 * Maintenance: Updated README to grammatically correct the content.
 * Maintenance: PHP 8.2 Compatibility test passed.
@@ -148,5 +151,5 @@ I use semantic versioning, with the first release being 1.0.
 
 == Upgrade Notice ==
 
-= 3.0.3 =
-* Maintenance: Updated readme text, added AD UI Box. 
+= 3.0.4 =
+* Maintenance: WordPress 6.6 compatibilty test passed. 
