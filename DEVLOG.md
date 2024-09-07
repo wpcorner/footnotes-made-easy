@@ -1,21 +1,13 @@
 # Development Log
 
-## v.3.0.4 
+## v.3.0.5 
 
 To be released.
 
 **Features I'm working on:**
 
-- [ ] Adding a possibility of turning footnotes off on mobile
+- [ ] Make two videos, one showing the plugin's overview, and the other one showing how to use the plugin.
+- [ ] Redesigning the plugin's options page
+- [ ] Move back-link to the beginning of the line [#5](https://github.com/wpcorner/footnotes-made-easy/issues/5)
 
-Once complete, v.3.0.4 will be released.
-
-## v.3.0.3 
-
-Released on 7th April 2024.
-
-Release Package - [**Download**](https://github.com/wpcorner/footnotes-made-easy/releases/tag/3.0.3).
-
-**Features**
-
-- [x] Ad UI Box in the plugin's settings page. (this feature has been successfully added)
+Once complete, v.3.0.5 will be released.
