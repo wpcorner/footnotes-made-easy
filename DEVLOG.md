@@ -6,7 +6,7 @@ To be released.
 
 **Features I'm working on:**
 
-- [x] Make a video showing the plugin's overview.
+- [x] Make a video showing the plugin's overview. [Link](https://www.youtube.com/watch?v=LuXMb8Hz4tc)
 - [ ] Redesigning the plugin's options page
 - [ ] Move back-link to the beginning of the line. [Issue #5](https://github.com/wpcorner/footnotes-made-easy/issues/5)
 
