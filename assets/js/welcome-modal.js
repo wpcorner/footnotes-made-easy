@@ -88,7 +88,7 @@
                 '</div>' +
                 '</div>';
             ctaHtml =
-                '<a href="' + ( config.proUrl || '#' ) + '" target="_blank" rel="noopener noreferrer" class="fme-welcome-modal__cta" id="fme-welcome-cta" data-action="link">See Pro features →</a>' +
+                '<a href="' + ( config.proUrl || '#' ) + '" class="fme-welcome-modal__cta" id="fme-welcome-cta" data-action="link">See Pro features →</a>' +
                 '<button type="button" class="fme-welcome-modal__cta-secondary" id="fme-welcome-dismiss" data-action="dismiss">Explore the free version</button>';
         }
 

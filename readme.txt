@@ -185,6 +185,10 @@ Full documentation is at [docs.altvisewp.com/footnotes-made-easy](https://docs.a
 
 I use semantic versioning, with the first release being 1.0.
 
+= 3.2.2 =
+* Added: The footnotes header and footer text can now be translated per language with Polylang and WPML. On sites without a translation plugin, nothing changes.
+* Added: New `[footnotes]` shortcode for processing footnotes in places where the standard content filter does not run, such as Pods or ACF custom fields and page-builder modules.
+
 = 3.2.1 [June 23, 2026] =
 * Fixed: Duplicate footnote text appearing at the bottom of the page when Pretty Tooltips was enabled. [#51](https://github.com/altvisewp/footnotes-made-easy/issues/51)
 * Fixed: Footnote font size appeared too large on themes that don't load the block library stylesheet. [#52](https://github.com/altvisewp/footnotes-made-easy/issues/52)
