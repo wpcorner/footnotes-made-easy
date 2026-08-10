@@ -1004,6 +1004,25 @@ class swas_wp_footnotes {
         return false;
     }
 
+	/**
+	 * Top-level menu title, with a "PRO" badge appended when an active Pro
+	 * licence is present. WordPress renders menu titles as HTML, so the badge
+	 * is a small inline span. Falls back to the plain title otherwise.
+	 *
+	 * @return string
+	 */
+	public static function menu_title() {
+		$title = __( 'Footnotes', 'footnotes-made-easy' );
+
+		$is_pro = defined( 'FME_PRO_VERSION' ) && function_exists( 'fmep_fs' ) && fmep_fs() && fmep_fs()->is_paying();
+
+		if ( $is_pro ) {
+			$title .= ' <span class="fme-menu-pro-badge" style="display:inline-block;margin-left:4px;padding:0 5px;border:1px solid currentColor;border-radius:8px;background:transparent;color:inherit;font-size:9px;font-weight:700;line-height:1.7;letter-spacing:0.04em;vertical-align:middle;opacity:0.9;">PRO</span>';
+		}
+
+		return $title;
+	}
+
 	function add_options_page() {
 
 		// In network-managed mode, hide menu from non-super-admins
@@ -1016,7 +1035,7 @@ class swas_wp_footnotes {
 		// Standalone top-level menu item, positioned after Posts (Posts = 5)
 		$footnotes_hook = add_menu_page(
 			__( 'Footnotes Made Easy', 'footnotes-made-easy' ),
-			__( 'Footnotes', 'footnotes-made-easy' ),
+			self::menu_title(),
 			'manage_options',
 			'footnotes-made-easy',
 			array( $this, 'footnotes_dashboard_page' ),
@@ -1059,7 +1078,7 @@ class swas_wp_footnotes {
 
 		add_menu_page(
 			__( 'Footnotes Made Easy', 'footnotes-made-easy' ),
-			__( 'Footnotes', 'footnotes-made-easy' ),
+			self::menu_title(),
 			'manage_network_options',
 			'footnotes-made-easy',
 			array( $this, 'footnotes_dashboard_page' ),
