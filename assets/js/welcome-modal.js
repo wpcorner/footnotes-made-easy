@@ -67,7 +67,7 @@
             // activation dialog the other "Activate license" buttons use.
             proBlock =
                 '<div class="fme-welcome-pro">' +
-                '<div class="fme-welcome-pro__icon">🔑</div>' +
+                '<div class="fme-welcome-pro__icon"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="4.5" stroke="currentColor" stroke-width="1.7"/><path d="M11.2 11.2 20 20M17 17l2-2M14 14l2-2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>' +
                 '<div class="fme-welcome-pro__text">' +
                 '<p class="fme-welcome-pro__title">Activate your Pro license</p>' +
                 '<p class="fme-welcome-pro__desc">Enter your license key to unlock citations, the Citation Library, and Classic Editor &amp; Gutenberg support.</p>' +
@@ -81,7 +81,7 @@
             // Free user — the main conversion moment.
             proBlock =
                 '<div class="fme-welcome-pro">' +
-                '<div class="fme-welcome-pro__icon">🚀</div>' +
+                '<div class="fme-welcome-pro__icon"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3c3 1 5 4 5 8 0 2-.5 3.5-1 4.5H8c-.5-1-1-2.5-1-4.5 0-4 2-7 5-8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="1.6" stroke="currentColor" stroke-width="1.6"/><path d="M8 16c-1.5.5-2 2-2 4 1.2 0 2.3-.4 3-1M16 16c1.5.5 2 2 2 4-1.2 0-2.3-.4-3-1M10 20c0 1-.5 1.8-1 2.2M14 20c0 1 .5 1.8 1 2.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>' +
                 '<div class="fme-welcome-pro__text">' +
                 '<p class="fme-welcome-pro__title">Footnotes Made Easy Pro is here</p>' +
                 '<p class="fme-welcome-pro__desc">Academic citations in APA, MLA, Chicago &amp; Harvard · Reusable Citation Library · Classic Editor &amp; Gutenberg support</p>' +
@@ -231,8 +231,9 @@
             ctaBtn.addEventListener( 'click', function ( e ) {
                 var action = ctaBtn.getAttribute( 'data-action' );
                 if ( action === 'link' ) {
-                    // External link opening in a new tab — current page stays put,
-                    // so the async markShown() completes fine.
+                    // Same-tab internal link to the Pro page. This fetch is a
+                    // best-effort; navigation can cut it off, so the Pro page
+                    // also records the dismissal server-side on load.
                     markShown();
                 } else if ( action === 'activate-license' ) {
                     openLicenseActivation();

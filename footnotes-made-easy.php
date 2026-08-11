@@ -3,7 +3,7 @@
  * Plugin Name:       Footnotes Made Easy
  * Plugin URI:        https://lumumbas.blog/plugins/footnotes-made-easy/
  * Description:       Allows post authors to easily add and manage footnotes in posts.
- * Version:           3.2.2-beta.1
+ * Version:           3.2.2
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            Patrick Lumumba
@@ -31,7 +31,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 // and for the welcome-modal version comparison (more reliable than reading the
 // header at runtime via get_plugin_data(), which isn't always loaded on admin_init).
 if ( ! defined( 'FME_VERSION' ) ) {
-    define( 'FME_VERSION', '3.2.2-beta.1' );
+    define( 'FME_VERSION', '3.2.2' );
 }
 
 // External Pro upgrade / pricing page. Kept for public, shareable links only.
@@ -47,7 +47,7 @@ if ( ! defined( 'FME_PRO_URL' ) ) {
  *
  * @return string
  */
-function fme_pro_page_url() {
+function fme_pro_page_url() { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound -- Uses the plugin's established fme_ prefix.
     return is_multisite()
         ? network_admin_url( 'admin.php?page=footnotes-pro' )
         : admin_url( 'admin.php?page=footnotes-pro' );
@@ -56,10 +56,6 @@ function fme_pro_page_url() {
 // Multilingual support: make the footnote header/footer text translatable via
 // Polylang and WPML. No-ops on sites without a translation plugin.
 require_once dirname( __FILE__ ) . '/includes/multilingual.php';
-
-// [footnotes] shortcode — process footnotes where the_content does not run
-// (Pods/ACF fields, page-builder modules, widgets).
-require_once dirname( __FILE__ ) . '/includes/shortcode.php';
 
 /**
  * Enqueue plugin admin styles and scripts — only on our plugin pages.
@@ -1188,6 +1184,16 @@ class swas_wp_footnotes {
 	 * Pro Coming Soon page
 	 */
 	function footnotes_pro_page() {
+		// If the user reached this page from the welcome notice's "See Pro
+		// features" CTA, that counts as having seen the welcome — record it
+		// here server-side. This is deterministic, unlike the JS fetch, which
+		// can be cut off by the same-tab navigation to this page.
+		$fme_welcome_ver = get_transient( 'fme_show_welcome' );
+		if ( $fme_welcome_ver ) {
+			update_option( 'fme_welcome_shown_version', $fme_welcome_ver );
+			delete_transient( 'fme_show_welcome' );
+		}
+
 		// Render the in-plugin Pro sales page. (Public marketing still lives on
 		// the external page, FME_PRO_URL, used for shareable/public links.)
 		include plugin_dir_path( __FILE__ ) . 'includes/pro-page.php';

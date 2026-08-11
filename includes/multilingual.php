@@ -29,7 +29,7 @@ if ( ! defined( 'FME_STRINGS_GROUP' ) ) {
  * Runs on init so the multilingual plugin's registration API is available.
  * Only non-empty values are registered.
  */
-function fme_register_translatable_strings() {
+function fme_register_translatable_strings() { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound -- Uses the plugin's established fme_ prefix.
 	$options = get_option( 'swas_footnote_options', array() );
 
 	$strings = array(
@@ -51,7 +51,7 @@ function fme_register_translatable_strings() {
 
 		// WPML.
 		if ( has_action( 'wpml_register_single_string' ) ) {
-			do_action( 'wpml_register_single_string', FME_STRINGS_GROUP, $label, $value );
+			do_action( 'wpml_register_single_string', FME_STRINGS_GROUP, $label, $value ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound -- WPML's own hook name; must be used verbatim to integrate.
 		}
 	}
 }
@@ -66,7 +66,7 @@ add_action( 'init', 'fme_register_translatable_strings' );
  * @param string $value The original (untranslated) string value.
  * @return string
  */
-function fme_translate_string( $key, $value ) {
+function fme_translate_string( $key, $value ) { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound -- Uses the plugin's established fme_ prefix.
 	if ( '' === trim( (string) $value ) ) {
 		return $value;
 	}
@@ -84,7 +84,7 @@ function fme_translate_string( $key, $value ) {
 		);
 		$label = isset( $labels[ $key ] ) ? $labels[ $key ] : $key;
 
-		return apply_filters( 'wpml_translate_single_string', $value, FME_STRINGS_GROUP, $label );
+		return apply_filters( 'wpml_translate_single_string', $value, FME_STRINGS_GROUP, $label ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound -- WPML's own hook name; must be used verbatim to integrate.
 	}
 
 	return $value;

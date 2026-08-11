@@ -11,6 +11,7 @@
  */
 
 defined( 'ABSPATH' ) || exit;
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound -- Template file included from within class method scope; all variables use the fme_ prefix.
 
 // Per-tier Freemius checkout links.
 $fme_star     = '<svg viewBox="0 0 14 14" fill="currentColor" width="16" height="16"><path d="M7 0l1.8 4.2L13 4.6 9.8 7.6l1 4.4L7 9.8 3.2 12l1-4.4L1 4.6l4.2-.4z"/></svg>';

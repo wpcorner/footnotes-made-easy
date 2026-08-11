@@ -57,7 +57,7 @@ $fme_suite_icon = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAB
     <?php if ( $fme_pro_active ) : ?>
     <!-- Pro tip card -->
     <div class="fme-tip-card">
-        <div class="fme-tip-card__icon" aria-hidden="true">💡</div>
+        <div class="fme-tip-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.5.5 1 1.2 1 2h6c0-.8.5-1.5 1-2A6 6 0 0 0 12 3z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <h3 class="fme-tip-card__heading"><?php esc_html_e( 'Did you know?', 'footnotes-made-easy' ); ?></h3>
         <p class="fme-tip-card__text"><?php echo wp_kses( $fme_tip, $fme_allowed_tip_html ); ?></p>
     </div>
@@ -65,7 +65,7 @@ $fme_suite_icon = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAB
     <?php elseif ( defined( 'FME_PRO_VERSION' ) && ! $fme_pro_active && is_multisite() && ! is_super_admin() ) : ?>
     <!-- Subsite notice — Pro installed but not licensed, contact network admin -->
     <div class="fme-tip-card" style="border-left-color:#f59e0b;background:#fffbeb;">
-        <div class="fme-tip-card__icon" aria-hidden="true">🔒</div>
+        <div class="fme-tip-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 11V7a4 4 0 0 1 8 0v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
         <h3 class="fme-tip-card__heading" style="color:#78350f;"><?php esc_html_e( 'Pro not activated', 'footnotes-made-easy' ); ?></h3>
         <p class="fme-tip-card__text" style="color:#78350f;"><?php esc_html_e( 'Footnotes Made Easy Pro is installed but not yet licensed. Please contact your network administrator to activate the license.', 'footnotes-made-easy' ); ?></p>
     </div>

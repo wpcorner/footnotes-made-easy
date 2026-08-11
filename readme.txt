@@ -5,7 +5,7 @@ Donate link: https://lumumbas.blog/support-wp-plugins
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 3.2.2-beta.1
+Stable tag: 3.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,7 +51,7 @@ Everything in the free plugin keeps working exactly as it does today — Pro sim
 
 **Footnotes Made Easy is a fork of [WP Footnotes](https://github.com/drzax/wp-footnotes "Github - wp-footnotes"), a plugin by Simon Elvery.**
 
-**For the latest code, planned enhancements and known issues, visit the [GitHub page](https://github.com/altvisewp/footnotes-made-easy/s "Github").**
+**For the latest code, planned enhancements and known issues, visit the [GitHub page](https://github.com/altvisewp/footnotes-made-easy/ "Github").**
 
 == Getting Started ==
 
@@ -185,9 +185,8 @@ Full documentation is at [docs.altvisewp.com/footnotes-made-easy](https://docs.a
 
 I use semantic versioning, with the first release being 1.0.
 
-= 3.2.2 =
-* Added: The footnotes header and footer text can now be translated per language with Polylang and WPML. On sites without a translation plugin, nothing changes.
-* Added: New `[footnotes]` shortcode for processing footnotes in places where the standard content filter does not run, such as Pods or ACF custom fields and page-builder modules.
+= 3.2.2 [August 10, 2026] =
+* Fixed: The footnotes header and footer text could not be translated on multilingual sites — every language showed the same text. These strings can now be translated per language via Polylang and WPML. Reported on the support forum. On sites without a translation plugin, nothing changes.
 
 = 3.2.1 [June 23, 2026] =
 * Fixed: Duplicate footnote text appearing at the bottom of the page when Pretty Tooltips was enabled. [#51](https://github.com/altvisewp/footnotes-made-easy/issues/51)
